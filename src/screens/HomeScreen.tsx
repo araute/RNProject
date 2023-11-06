@@ -49,7 +49,7 @@ const getCoffeeList = (category: string, data: any) => {
 
 const HomeScreen = ({navigation}: any) => {
   const CoffeeList = useStore((state: any) => state.CoffeeList);
-  const BeanList = useStore((state: any) => state.BeanList);
+  const BeanList = useStore((state: any) => state.BeansList);
   const addToCart = useStore((state: any) => state.addToCart);
   const calculateCartPrice = useStore((state: any) => state.calculateCartPrice);
 
@@ -69,7 +69,7 @@ const HomeScreen = ({navigation}: any) => {
   const tabBarHeight = useBottomTabBarHeight();
 
   const searchCoffee = (search: string) => {
-    if (search != '') {
+    if (search !== '') {
       ListRef?.current?.scrollToOffset({
         animated: true,
         offset: 0,

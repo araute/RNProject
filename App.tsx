@@ -5,6 +5,7 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import PaymentScreen from './src/screens/PaymentScreen';
 import FavoriteScreen from './src/screens/FavoriteScreen';
 import TabNavigator from './src/navigators/TabNavigator';
+import DetailsScreen from './src/screens/DetailsScreen';
 
 const Stack = createNativeStackNavigator();
 const App = () => {
@@ -20,8 +21,8 @@ const App = () => {
           component={PaymentScreen}
           options={{animation: 'slide_from_bottom'}}></Stack.Screen>
         <Stack.Screen
-          name="Favorite"
-          component={FavoriteScreen}
+          name="Details"
+          component={DetailsScreen}
           options={{animation: 'slide_from_bottom'}}></Stack.Screen>
       </Stack.Navigator>
     </NavigationContainer>

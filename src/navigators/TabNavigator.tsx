@@ -22,7 +22,8 @@ const TabNavigator = () => {
           <BlurView
             overlayColor=""
             blurAmount={15}
-            style={styles.blurViewStyles}></BlurView>
+            style={styles.blurViewStyles}
+          />
         ),
       }}>
       <Tab.Screen
@@ -35,7 +36,8 @@ const TabNavigator = () => {
               size={25}
               color={
                 focused ? COLORS.primaryOrangeHex : COLORS.primaryLightGreyHex
-              }></CustomIcon>
+              }
+            />
           ),
         }}></Tab.Screen>
       <Tab.Screen
@@ -48,20 +50,22 @@ const TabNavigator = () => {
               size={25}
               color={
                 focused ? COLORS.primaryOrangeHex : COLORS.primaryLightGreyHex
-              }></CustomIcon>
+              }
+            />
           ),
         }}></Tab.Screen>
       <Tab.Screen
-        name="like"
+        name="Favorite"
         component={FavoriteScreen}
         options={{
           tabBarIcon: ({focused, color, size}) => (
             <CustomIcon
-              name="home"
+              name="like"
               size={25}
               color={
                 focused ? COLORS.primaryOrangeHex : COLORS.primaryLightGreyHex
-              }></CustomIcon>
+              }
+            />
           ),
         }}></Tab.Screen>
       <Tab.Screen
@@ -74,7 +78,8 @@ const TabNavigator = () => {
               size={25}
               color={
                 focused ? COLORS.primaryOrangeHex : COLORS.primaryLightGreyHex
-              }></CustomIcon>
+              }
+            />
           ),
         }}></Tab.Screen>
     </Tab.Navigator>
